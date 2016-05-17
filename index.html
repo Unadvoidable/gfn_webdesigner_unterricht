@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<!-- Navigation -->
+<h4>Navigation [Ungeordnete Liste]</h4>
+<nav>
+    <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="produkte.html">Produkte</a></li>
+        <li><a href="projekte.html">Projekte</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<hr>
+<header>
+    <!-- TODO: Mit CSS verbessern -->
+
+
+</header>
+
+
+<main>
+    <h1>Webdesign</h1>
+
+    <p> Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders »Lorem Ipsum«, freue ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist wahrgenommen werden. Und weil Sie nun schon die Güte haben, mich ein paar weitere Sätze lang zu begleiten, möchte ich diese Gelegenheit nutzen, Ihnen nicht nur als Lückenfüller zu dienen, sondern auf etwas hinzuweisen, das es ebenso verdient wahrgenommen zu werden: Webstandards nämlich. Sehen Sie, Webstandards sind das Regelwerk, auf dem Webseiten aufbauen. So gibt es Regeln für HTML, CSS, JavaScript oder auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler gehört haben. Diese Standards sorgen dafür, dass alle Beteiligten aus einer Webseite den größten Nutzen ziehen. Im Gegensatz zu früheren Webseiten müssen wir zum Beispiel nicht mehr zwei verschiedene Webseiten für den Internet Explorer und einen anderen Browser programmieren.</p>
+
+    <h4>Verschachtelte Listen [ul,ol]</h4>
+    <ul>
+        <li>Schutzkleidung
+            <ul>
+                <li>Schuhe</li>
+                <li>Helme</li>
+                <li>Hosen</li>
+            </ul>
+        </li>
+        <li>Waffen
+            <ul>
+                <li>Stichwaffen
+                    <ul>
+                        <li>Messer</li>
+                        <li>Speer</li>
+                        <li>Degen</li>
+                    </ul>
+                </li>
+                <li>Schusswaffen
+                    <ul>
+                        <li>Pistolen</li>
+                        <li>Gewehre</li>
+                        <li>Schrotflinten</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Verpflegung
+            <ol start="6" type="I">
+                <li>Essen
+                    <ol>
+                        <li>Maggifix</li>
+                        <li>Lecker Lecker Mjam mjam mjam</li>
+                        <li>Konservierte Käsestullen</li>
+                    </ol>
+                </li>
+                <li>Medikamente
+                    <ul>
+                        <li>Schmerzmittel</li>
+                        <li>Homöopathisch</li>
+                        <li>Bergbachblüten
+                        </li>
+                    </ul>
+                </li>
+                <li>Drogen
+                    <ul>
+                        <li>Aufputschend</li>
+                        <li>Beruhigend</li>
+
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ul>
+
+    <h4>Definitionslisten [dl,dt,dd]</h4>
+    <dl>
+        <!-- 1 -->
+        <dt>Obst</dt>
+        <dd>Apfel</dd>
+        <dd>Birne</dd>
+        <dd>Zitrone</dd>
+        <dd>Drachenfrucht</dd>
+        <!-- 2 -->
+        <dt>Filmabspielgeräte</dt>
+        <dd>Projektor</dd>
+        <dd>Beamer</dd>
+        <dd>Tragbare DVD-Player</dd>
+        <!-- 3 -->
+        <dt>Filme</dt>
+        <dd>Heimatfilme</dd>
+        <dd>Action</dd>
+        <dd>DIYs</dd>
+    </dl>
+
+    <h4>Infoklappbox [details]</h4>
+    <details open>
+        <summary>Tipps & Tricks</summary>
+        <ul>
+            <li><em>Genug Essen</em></li>
+            <li><em>Warm Halten</em></li>
+            <li><em>Immer Trockene Füße Haben</em></li>
+        </ul>
+    </details>
+
+    <h4>Bilder und Figuren [img,figure,figcaption]</h4>
+    ... mit relativen, absoluten und externen Pfaden.
+    <figure>
+        <img src="img/zombies-993711_1280.jpg" alt="Zombie Strandurlaub" width="40%" height="auto" title="Gammeln aufn Strand">
+        <figcaption>
+            <em>So Schön kann Strandurlaub in der Postapokalypte sein!</em>
+        </figcaption>
+    </figure>
+    
+</main>
+
+
+<!--     ul>li{Schutzkleidung}>ul>li{Schuhe}+li{Helme}+li{Hosen}^^li{Waffen}>ul>li{Stichwaffen}+li{Schusswaffen}^^li{Verpflegung}>ul>li{Essen}+li{Medikamente}+li{Drogen}  -->
+<!-- FIXME: Struktur flacher gestalten /refactor -->
+
+
+<hr>
+
+<!-- Footer -->
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="AGB.html">AGB</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/04_lecture.css">
+</head>
+
+<body>
+    <h1>Unterricht Teil 4</h1>
+    <hr>
+    <h2>Notizen</h2>
+    <ul id="liste_notizen">
+        <li>
+           
+            <code>./index.html </code>
+            <em>Bezeichnet den aktuellen Ordner</em>
+            <br>
+            <code>../index.html </code>
+            <em>Bezeichnet den Ordner darüber</em>
+        </li>
+        <li>
+            <strong>Einbinden von Css dateien</strong>
+            <br>
+            <code>&lt;link rel="stylesheet" href="css/basic.css" &gt;</code>
+            <br> im Html <em>head</em>
+        </li>
+        <li>CSS: Veränderung von HintergrundFarbe und Schriftfarbe
+            <br> <code>body {background-color: rgb(128, 128, 255);color: antiquewhite}</code>
+        </li>
+        <li>
+            CSS: <strong>em</strong> Beschreibt eine Schriftgrößenordnung die sich auf auf das absolute Elternelement:
+            <br>
+            <code>font-size: 0.7em;</code>
+            <br> bedeutet 70% der Pixel von den 12px die für die seite eingestellt sind
+        </li>
+        <li>
+            <strong>Padding</strong> Beschreibt den Abstand innerhalb des Elementes
+            <br>
+            <strong>Margin</strong> Beschreibt den Abstand ausserhalb des Elementes
+        </li>
+    </ul>
+
+    <strong>Aufgabe</strong> ist folgendes zu verändern
+    <ul>
+        <li>Minimale Höhe auf 600px</li>
+        <li>Maximale Breite auf 960px</li>
+        <li>Die Webseite zu Zentrieren falls breite breiter als 960 Pixel ist</li>
+    </ul>
+
+    <details>
+        <summary><strong>Tipp des Tages</strong></summary>
+        <ul>
+            <li>Codesnippets -<em> Nutzt man um gute codeteile zu speichern und jederzeit wiederverwenden zu können</em></li>
+        </ul>
+    </details>
+    <hr>
+
+    <!-- ################# Der Eigentliche Beispielcode ################ -->
+
+    <h2>Beispiel code</h2>
+    <em>aus Unterricht 4 (inkl. Aufgabenstellung)</em>
+    <div id="samplecode">
+        <header></header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="produkte.html">Produkte</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus error ab ipsam dolorem? Est, facere. Iusto consectetur ut nulla. Iusto fugit voluptates eveniet, repellendus qui corrupti! Culpa vero illo et inventore, earum voluptates error officia repellendus nihil fugit maiores ab. Doloribus labore voluptas amet sed non illum magni, tenetur maxime.</p>
+        </main>
+
+
+        <footer>
+            <nav id="meta-nav">
+                <ul>
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                    <li><a href="AGB.html">AGB</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+#liste_notizen li{
+    margin: 10px 0 10px 0;
+}
+
+#liste_notizen{
+    background: #d2cef2;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
