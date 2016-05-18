@@ -1,3 +1,6 @@
+body{
+    background: #e6e6fa;
+}
 #liste_notizen li{
     margin: 10px 0 10px 0;
 }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulare</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <div id="wrapper">
+        <div id="formulare">
+
+            <form action="05_submit.php" method="post">
+                <label for="vorname">Vorname:</label>
+                <br>
+                <input type="text" name="vorname" id="vorname">
+                <br>
+                <label for="nachname">Nachname:</label>
+                <br>
+                <input type="text" name="nachname" id="nachname">
+                <br>
+                <label for="anschrift">Anschrift:</label>
+                <br>
+                <input type="text" name="anschrift" id="anschrift">
+                <br>
+                <label for="autos">Anzahl von Autos</label>
+                <br>
+                <input type="number" name="autos" id="autos" value="1">
+                <br>
+                <br>
+                <input type="text" name="birth" id="birth" placeholder="Geburtsdatum">
+                <br>
+                <input type="password" name="passwort" id="passwort" placeholder="Passwort" min="10" required>
+                <br>
+                <input type="email" name="usr_email" id="usr_email" placeholder="Email" required>
+                <br>
+                <br>
+                <textarea name="kommentar" id="kommentar" cols="30" rows="10" placeholder="Ihr Kommentar zu diesem Sachverhalt"></textarea>
+                <h3>Optional Ausfüllen</h3>
+                <label for="stadtteil">Bitte selektieren Sie ihren Stadtteil</label>
+                <br>
+                <select name="stadtteil" id="stadtteil">
+                    <option value="none" selected> --- </option>
+                    <optgroup label="Hamburg">
+                        <option value="district01">Altona</option>
+                        <option value="district02">Bergedorf</option>
+                        <option value="district03">Eimsbüttel</option>
+                        <option value="district04">Billstedt</option>
+                        <option value="district05">Harburg</option>
+                    </optgroup>
+                    <optgroup label="Berlin">
+                        <option value="district01">Kreuzberg</option>
+                        <option value="district02">Wedding</option>
+                        <option value="district03">Neukölln</option>
+                        <option value="district04">Schöneberg</option>
+                        <option value="district05">Tempelhof</option>
+                    </optgroup>
+                </select>
+                <br>
+                <h3>Hobbys</h3>
+                <input type="checkbox" name="hobby01" id="hobby01">
+                <label for="hobby01">Schwimmen</label>
+                <br>
+                <input type="checkbox" name="hobby02" id="hobby02">
+                <label for="hobby02">Tanzen</label>
+                <br>
+                <input type="checkbox" name="hobby03" id="hobby03">
+                <label for="hobby03">Reiten</label>
+                <br>
+                <input type="checkbox" name="hobby04" id="hobby04">
+                <label for="hobby04">Pumpen</label>
+                <br>
+                <br>
+
+                <!-- div(input:checkbox[name=hobby$ #hobby$]+label[for=hobby$])*5 -->
+                <!-- div.checkboxdesign(input:checkbox[name=hobby$ #hobby$]+label[for=hobby$])*5 -->
+                <div class="checkboxdesign">
+                    <input type="checkbox" name="hobby1" id="#hobby1">
+                    <label for="hobby1"></label>
+                </div>
+                <div class="checkboxdesign">
+                    <input type="checkbox" name="hobby2" id="#hobby2">
+                    <label for="hobby2"></label>
+                </div>
+                <div class="checkboxdesign">
+                    <input type="checkbox" name="hobby3" id="#hobby3">
+                    <label for="hobby3"></label>
+                </div>
+                <div class="checkboxdesign">
+                    <input type="checkbox" name="hobby4" id="#hobby4">
+                    <label for="hobby4"></label>
+                </div>
+                <div class="checkboxdesign">
+                    <input type="checkbox" name="hobby5" id="#hobby5">
+                    <label for="hobby5"></label>
+                </div>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

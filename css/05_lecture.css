@@ -1,0 +1,68 @@
+body {}
+
+
+/* Spricht den Container an welcher für den Body steht */
+
+#samplecode {
+    /*Schriftart, Prioriätenliste, erst mögliche wird genommen*/
+    font-family: arial, verdana, helvetica, sans-serif;
+    /*Feinheit der schrift*/
+    font-weight: 300;
+    /*Abstand von Grundlinie zur Grundlinie*/
+    line-height: 120%;
+    /* Beschreibt die Maximale Breite der webseite, falls weniger 
+    platz verfügbar wird die Seite zusammengeschoben */
+    max-width: 960px;
+    min-height: 600px;
+    margin: 0 auto 0 auto;
+}
+
+main {
+    background: linear-gradient(#6a5ed6, #e1def6);
+    padding: 10px; 
+    color: white;
+}
+
+codebeispiel {
+    padding: 10 20 30 40;
+}
+
+a {
+    color: #fff;
+}
+
+nav {
+    background-color: #3F3880;
+}
+
+
+/* Bezieht sich auf alle UL Elemente im Nav*/
+
+nav ul {
+    /* Entfernt die Punkte in den Unordnet-lists*/
+    list-style-type: none;
+    /*  */
+    padding: 10px;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul a {
+    /* Entfernt die linie */
+    text-decoration: none;
+}
+
+#main-nav li a {
+    text-transform: uppercase;
+}
+
+footer nav ul a {
+    color: #ff3232;
+    font-size: 0.7em;
+    /* Bezieht sich auf die aktuelle Schriftgröße*/
+    font-style: oblique;
+}

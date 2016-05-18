@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/05_lecture.css">
+</head>
+
+<body>
+    <h1>Unterricht Teil 5</h1>
+    <hr>
+    <h2>Notizen</h2>
+    <ul id="liste_notizen">
+        <li>
+            <strong>Formular:</strong>
+            <br> definiert man wie folgt: <code>&lt;form action="#" method="post"&gt; ... &lt;/form&gt </code>
+            <br>wobei die attribute
+            <br><code>action</code>: eine Aktion ist die beim Ausführen eines Submitbuttons ausgelöst wird. Dies kann ein Script sein.
+            <br><code>method</code>: legt eine HTTP-methode fest nach der die daten geschickt werden.
+        </li>
+        <li>
+            <strong>Formularelemente</strong>
+            <br> ein formular kann mit verschiedenen Formularelementen gefüllt werden.
+            <br> Eine Liste dieser kann man unter <a href="https://wiki.selfhtml.org/wiki/HTML/Formulare/Form">Formulare und Formularelemente</a> nachlesen.
+            <!-- FIXME Einzelne Elemente erklären -->
+        </li>
+        <li>
+            <strong>Formulardaten an Server senden</strong>
+            <br>Hierzu legen wir eine php datei an wie zb <em>submit.php</em>
+            <br>in diese schreiben wir denn folgenden code: <code>&lt;pre&gt; &lt;?php print_r($_POST); ?&gt;&lt;/pre&gt;</code>
+        </li>
+    </ul>
+    <!--
+    <strong>Aufgabe</strong> ist folgendes zu verändern
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    -->
+    <!-- Infobox - Tipp des tages -->
+
+    <details>
+        <summary><strong>Tipp des Tages</strong></summary>
+        <ul>
+            <li>Lynx -<em> Ist ein Textbrowser welcher einem hilft nachzuvollziehen wie ein Screenreader funktioniert. Hilft somit beim kontrollieren ob die webseitenstruktur vernümpftig gelegt ist</em></li>
+            <li><em></em></li>
+        </ul>
+    </details>
+    <hr>
+
+    <h2>Beispiel code</h2>
+    <em>aus Unterricht 5 (inkl. Aufgabenstellung)</em>
+    <!-- ################# Der Eigentliche Beispielcode ################ -->
+    <div id="samplecode">
+
+        <header></header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="produkte.html">Produkte</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="wrapper">
+                <div id="formulare">
+                    <form action="05_submit.php" method="post">
+                        <label for="vorname">Vorname:</label>
+                        <br>
+                        <input type="text" name="vorname" id="vorname">
+                        <br>
+                        <label for="nachname">Nachname:</label>
+                        <br>
+                        <input type="text" name="nachname" id="nachname">
+                        <br>
+                        <label for="anschrift">Anschrift:</label>
+                        <br>
+                        <input type="text" name="anschrift" id="anschrift">
+                        <br>
+                        <label for="autos">Anzahl von Autos</label>
+                        <br>
+                        <input type="number" name="autos" id="autos" value="1">
+                        <br>
+                        <br>
+                        <input type="text" name="birth" id="birth" placeholder="Geburtsdatum">
+                        <br>
+                        <input type="password" name="passwort" id="passwort" placeholder="Passwort" min="10" required>
+                        <br>
+                        <input type="email" name="usr_email" id="usr_email" placeholder="Email" required>
+                        <br>
+                        <br>
+                        <textarea name="kommentar" id="kommentar" cols="30" rows="10" placeholder="Ihr Kommentar zu diesem Sachverhalt"></textarea>
+                        <h3>Optional Ausfüllen</h3>
+                        <label for="stadtteil">Bitte selektieren Sie ihren Stadtteil</label>
+                        <br>
+                        <select name="stadtteil" id="stadtteil">
+                            <option value="none" selected> --- </option>
+                            <optgroup label="Hamburg">
+                                <option value="district01">Altona</option>
+                                <option value="district02">Bergedorf</option>
+                                <option value="district03">Eimsbüttel</option>
+                                <option value="district04">Billstedt</option>
+                                <option value="district05">Harburg</option>
+                            </optgroup>
+                            <optgroup label="Berlin">
+                                <option value="district01">Kreuzberg</option>
+                                <option value="district02">Wedding</option>
+                                <option value="district03">Neukölln</option>
+                                <option value="district04">Schöneberg</option>
+                                <option value="district05">Tempelhof</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <h3>Hobbys</h3>
+                        <!-- div.checkboxdesign(input:checkbox[name=hobby$ #hobby$]+label[for=hobby$])*5 -->
+                        <div class="checkboxdesign">
+                            <input type="checkbox" name="hobby1" id="#hobby1">
+                            <label for="hobby1">Schwimmen</label>
+                        </div>
+                        <div class="checkboxdesign">
+                            <input type="checkbox" name="hobby2" id="#hobby2">
+                            <label for="hobby2">Tanzen</label>
+                        </div>
+                        <div class="checkboxdesign">
+                            <input type="checkbox" name="hobby3" id="#hobby3">
+                            <label for="hobby3">Kochen</label>
+                        </div>
+                        <div class="checkboxdesign">
+                            <input type="checkbox" name="hobby4" id="#hobby4">
+                            <label for="hobby4">Musizieren</label>
+                        </div>
+                        <div class="checkboxdesign">
+                            <input type="checkbox" name="hobby5" id="#hobby5">
+                            <label for="hobby5">Rumgammeln</label>
+                        </div>
+                        <br>
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <nav id="meta-nav">
+                <ul>
+                    <li><a href="impressum.html">Impressum</a></li>
+
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                    <li><a href="AGB.html">AGB</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>
