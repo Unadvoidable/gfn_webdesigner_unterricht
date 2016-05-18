@@ -14,7 +14,6 @@
     <h2>Notizen</h2>
     <ul id="liste_notizen">
         <li>
-
             <code>./index.html </code>
             <em>Bezeichnet den aktuellen Ordner</em>
             <br>
@@ -22,16 +21,21 @@
             <em>Bezeichnet den Ordner darüber</em>
         </li>
         <li>
+            <strong>Quirks-Modus:</strong> Ist ein Darstellungsmodus welcher abwärtskompalibilität sicherstellen soll und fehlerhaften/ungültigen Htmlcode verwenden kann.
+        </li>
+        <li><strong>--- CSS ---</strong></li>
+        <li>
             <strong>Einbinden von Css dateien</strong>
             <br>
             <code>&lt;link rel="stylesheet" href="css/basic.css" &gt;</code>
             <br> im Html <em>head</em>
         </li>
-        <li>CSS: Veränderung von HintergrundFarbe und Schriftfarbe
+        <li>
+            Veränderung von HintergrundFarbe und Schriftfarbe
             <br>Beispielcode: <code>body {background-color: rgb(128, 128, 255); color: antiquewhite}</code>
         </li>
         <li>
-            CSS: <strong>em</strong> Beschreibt eine Schriftgrößenordnung die sich auf auf das absolute Elternelement:
+            <strong>em</strong> Beschreibt eine Schriftgrößenordnung die sich auf auf das absolute Elternelement:
             <br>
             <code>font-size: 0.7em;</code>
             <br> bedeutet 70% der Pixel von den 12px die für die seite eingestellt sind
@@ -39,15 +43,47 @@
         </li>
 
         <li>
-            CSS: <strong>Padding</strong> Beschreibt den Abstand innerhalb des Elementes
-            <br>
-            <strong>Margin</strong> Beschreibt den Abstand ausserhalb des Elementes
+            <strong>Padding:</strong> Beschreibt den Abstand innerhalb des Elementes.
+            <br>Die Attribute des elements (wie zb Hintergrundfarbe) werden erweitert.
+            <br><strong>Margin:</strong> Beschreibt den Abstand ausserhalb des Elementes
             <br> Beispielcode: <code> main{padding: 10px; height: 600px;}</code>
         </li>
-        <li>CSS: Spezielle Elemente ansprechen erfolgt zB.
-            <br><code>nav a{ ... CSS-code ...}</code> Spricht alle &lt;a&gt; Elemente (Links) an die sich in einem &lt;nav&gt; Element befinden
-            <br>Beispielcode <code>footer nav ul a {color: coral;font-size: 0.7em;}</code>
+        <li>
+            <strong>Margin und Padding definieren:</strong> Die beiden Parameter können jeweils für oben, rechts, unten und links definiert werden.
+            <br> Die Definition dieser Parameter kann entwerder einzelnd:
+            <br> <code>codebeispiel{margin-top: 10px;margin-right: 20px;margin-bottom: 30px;margin-left: 40px;}</code>
+            <br> oder gesammelt erfolgen:
+            <br> <code>codebeispiel{padding: 10 20 30 40;}</code>
+            <br>Wobei die gesammelte Definition wie folgt ist
+            <br><code> &lt;Name&gt;{ &lt;padding/margin&gt;:  &lt;oben&gt;  &lt; rechts&gt;  &lt;unten&gt;  &lt;links&gt;}</code>
         </li>
+        <li>
+            Spezielle Elemente ansprechen erfolgt zB.
+            <br><code>nav a{ ... CSS-code ...}</code> Spricht alle &lt;a&gt; Elemente (Links) an die sich in einem &lt;nav&gt; Element befinden.
+            <br>Natürlich kann man auch beliebig speziell werden
+            <br>Beispielcode: <code>footer nav ul a {color: coral;font-size: 0.7em;}</code>
+        </li>
+        <li>
+            <!-- FIXME: Nachtragen -->
+            ??? Überlappung von Elementen wenn die Grenzen nicht fest definiert sind
+        </li>
+        <li>
+            <!-- FIXME: Nachtragen -->
+            <strong>IDs</strong>
+            <br>
+        </li>
+        <li>
+            <!-- FIXME: Nachtragen -->
+            <strong>Veränderung von LI elementen</strong>
+            <br>&lt;li&gt; Elemente sind sind standardmäßig auf blockelemente eingestellt, welchen man größen zuweisen kann.
+            <br>&lt;li&gt; Elemente alle nebeneinander aufreihen und einem Abstand von rechts 
+            <br><code>li {display: inline;margin-right: 10px;}</code>
+        </li>
+        <li>
+            
+        </li>
+
+
 
     </ul>
 
@@ -64,6 +100,7 @@
         <summary><strong>Tipp des Tages</strong></summary>
         <ul>
             <li>Codesnippets -<em> Nutzt man um gute codeteile zu speichern und jederzeit wiederverwenden zu können</em></li>
+            <li>Normalizer -<em> <!-- FIXME Nachtragen --> </em></li>
         </ul>
     </details>
     <hr>
@@ -93,6 +130,7 @@
             <nav id="meta-nav">
                 <ul>
                     <li><a href="impressum.html">Impressum</a></li>
+                    
                     <li><a href="datenschutz.html">Datenschutz</a></li>
                     <li><a href="AGB.html">AGB</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
