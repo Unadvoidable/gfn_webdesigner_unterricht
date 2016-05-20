@@ -10,6 +10,7 @@
 
 <body>
     <h1>Unterricht Teil 5</h1>
+    <em>18.05.2016</em>
     <hr>
     <h2>Notizen</h2>
     <ul id="liste_notizen">
@@ -27,9 +28,15 @@
             <!-- FIXME Einzelne Elemente erklären -->
         </li>
         <li>
+            
+        </li>
+        <li>
             <strong>Formulardaten an Server senden</strong>
             <br>Hierzu legen wir eine php datei an wie zb <em>submit.php</em>
             <br>in diese schreiben wir denn folgenden code: <code>&lt;pre&gt; &lt;?php print_r($_POST); ?&gt;&lt;/pre&gt;</code>
+        </li>
+        <li>
+            
         </li>
     </ul>
     <!--
@@ -138,6 +145,24 @@
                         <div class="checkboxdesign">
                             <input type="checkbox" name="hobby5" id="#hobby5">
                             <label for="hobby5">Rumgammeln</label>
+                        </div>
+                        <br>
+                        <!-- Radioboxen -->
+                        <div class="radioboxdesign">
+                            <input type="radio" name="anreise" id="Panzer" checked>
+                            <label for="Panzer">Panzer</label>
+                        </div>
+                        <div class="radioboxdesign">
+                            <input type="radio" name="anreise" id="Jet">
+                            <label for="Jet">Jet</label>
+                        </div>
+                        <div class="radioboxdesign">
+                            <input type="radio" name="anreise" id="Dreirad">
+                            <label for="Dreirad">Dreirad</label>
+                        </div>
+                        <div class="radioboxdesign">
+                            <input type="radio" name="anreise" id="Hubi">
+                            <label for="Hubi">Hubi</label>
                         </div>
                         <br>
                         <button type="reset">Reset</button>

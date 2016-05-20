@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/06_lecture.css">
+</head>
+
+<body>
+    <h1>Unterricht Teil 6</h1>
+    <em>19.05.2016</em>
+    <hr>
+    <h2>Notizen</h2>
+    <ul id="liste_notizen">
+        <li>Der WEBserver wird in diesem Fall für das Testen der Formulardaten gebraucht</li>
+        <li><strong>XAMPP:</strong>ist ein Paket für einen Lokalem Webserver den man zum testen seiner WEBsite nutzten kann, wobei:
+            <br>X - für ein Beliebiges Betriebsystem (Windows, Linux oder MAC)
+            <br>A - für Apachee
+            <br>M - für MySql oder MariaDB
+            <br>P - für PHP
+            <br>P - für Pearl
+            <br>steht. 
+        </li>
+        <li>
+            
+        </li>
+    </ul>
+    <!--
+    <strong>Aufgabe</strong> ist folgendes zu verändern
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    -->
+    <!-- Infobox - Tipp des tages -->
+
+    <details>
+        <summary><strong>Tipp des Tages</strong></summary>
+        <ul>
+        </ul>
+    </details>
+    <hr>
+
+    <h2>Beispiel code</h2>
+    <em>aus Unterricht 6</em>
+
+    <!-- ################# Der Eigentliche Beispielcode ################ -->
+    <div id="samplecode">
+        <header></header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="#">Leistungen</a></li>
+                <li><a href="#">Produkte</a></li>
+                <li><a href="#">Projekte</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <form action="http://localhost/submit.php" method="post">
+                <div>
+                    <input type="text" name="vorname" id="vorname" placeholder="Vorname">
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Emailadresse">
+                </div>
+                <div>
+                    <select name="target" id="target">
+                        <option value="news1">Vertrieb</option>
+                        <option value="news2">Technik</option>
+                        <option value="news3">Wirtschaft</option>
+                        <option value="news4">Sonstiges</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Ihr Feedback an uns ..."></textarea>
+                </div>
+                <div>
+                    <button type="submit">Senden</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <nav id="meta-nav">
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>

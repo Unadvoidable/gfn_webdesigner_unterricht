@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/06_lecture.css">
+    <style>
+        td {
+            text-align: center;
+            min-width: 100px;
+            min-height: 50px;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        
+        .green {
+            background-color: green;
+        }
+        
+        .orange {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Unterricht Teil 7</h1>
+    <em>20.05.2016</em>
+    <hr>
+    <h2>Notizen</h2>
+    <ul id="liste_notizen">
+        <li>
+            <strong>tr</strong> ist eine table row, also eine spalte
+            <br><strong>th</strong> ist ein table header
+            <br><strong>td</strong> bedeutet table data.
+        </li>
+        <li>Zellen lassen sich ebenfalls verbinden, dies geht immer vom <code>td</code> aus
+            <br> und zwar mit <code>colspan</code> (Horizontal verbinden) und <code>rowspan</code> (Vertikal verbinden)
+            <br> wichtig ist das das <code>td</code> auf die jenes angewendet wurde, die anzahl von plätzen einnimmt und deshalb muss man dementsprechend die drunter/nebenanliegenden Elemente löschen.
+        </li>
+        <li>
+            Tabellen nutzt man heutzutage nicht mehr zum designen, sondern nur wo man tabellen sonst benutzt. Bei daten etc. Aber auch bei Newslettern.
+        </li>
+        <li><strong>iFrame:</strong> Hiermit kann man andere Seiten in der Aktuellen Seite hineinladen/nachladen
+            <br><em>i</em> in iframe steht für inline
+        </li>
+        <li>
+            per klick auf link einen neuen Inhalt in das bestehende iFrame hinein laden. Hierzu muss das ifram einen <code>name=""</code> zugewiesen bekommen
+            <br>Die links bekommen dann ein <code>target=""</code> zugewiesen. Somit wird der link die ihm zugewiesene Adresse in dem iFrame öffnen.
+        </li>
+        <li>
+            Manche Seiten haben das anzeigen ihrer Inhalte auf einem iFrame in einer anderen WEBseite untersagt
+        </li>
+        <li>
+            iFrames ist eine gute Alternative für Seiten mit vielen Menues wenn kein PHP interpreter auf einem WEbserver oder gar ein webserver verfügbar ist
+        </li>
+        <li>iframes werden hauptsächlich dazu verwendet inhalte von andern webseiten anzuzeigen</li>
+        <li>youtube videos lassen sich zb. ebenfalls über ein iframe einbinden.
+            <br>Dazu geht man unter <em>Teilen - Einbetten</em> und dann bekommt man oft direkt den komplett den <code>iFrame</code> code
+            <br>bei google.maps funktioniert das genau so.
+        </li>
+
+    </ul>
+    <!-- Infobox - Tipp des tages -->
+
+    <details>
+        <summary><strong>Tipp des Tages</strong></summary>
+        <ul>
+            <li>Michi daran erinnern: iFrames popups erstellen</li>
+        </ul>
+    </details>
+    <hr>
+
+    <h2>Beispiel code</h2>
+    <em>aus Unterricht 7</em>
+
+    <!-- ################# Der Eigentliche Beispielcode ################ -->
+    <div id="samplecode">
+        <header></header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="#">Leistungen</a></li>
+                <li><a href="#">Produkte</a></li>
+                <li><a href="#">Projekte</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <table border="25">
+                <caption>Öffnungszeiten</caption>
+                <tr>
+                    <th>#</th>
+                    <th>Montag</th>
+                    <th>Dienstag</th>
+                    <th>Mittwoch</th>
+                    <th>Donnerstag</th>
+                    <th>Freitag</th>
+                </tr>
+                <tr>
+                    <td>09:00-12:00</td>
+                    <td class="green">Geöffnet</td>
+                    <td class="green">Geöffnet</td>
+                    <td class="red">Geschlossen</td>
+                    <td class="green">Geöffnet</td>
+                    <td class="green">Geöffnet</td>
+                </tr>
+                <tr>
+                    <td>12:00-13:00</td>
+                    <td colspan="5" class="orange">Mittagspause</td>
+                </tr>
+                <tr>
+                    <td>13:00-16:00</td>
+                    <td rowspan="2" class="green">Geöffnet</td>
+                    <td class="green">Geöffnet</td>
+                    <td class="green">Geöffnet</td>
+                    <td rowspan="2" class="green">Geöffnet</td>
+                    <td rowspan="2" class="red">Geschlossen</td>
+                </tr>
+                <tr>
+                    <td>16:00-19:00</td>
+                    <!-- <td>Geöffnet</td> -->
+                    <td class="red">Geschlossen</td>
+                    <td class="red">Geschlossen</td>
+                    <!-- <td>Geöffnet</td> -->
+                    <!-- <td>Geschlossen</td> -->
+                </tr>
+            </table>
+
+            <iframe src="07_nav.html" frameborder="0" name="navigations_iframe" width="100%">Das menue konnte nicht geladen werden</iframe>
+
+            <iframe src="https://wiki.selfhtml.org/wiki/Startseite" frameborder="1" width="100%" height="600px" name="webfenster_iframe"> Die Seite konnte nicht geladen werden!</iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f7B41ZxOlDs" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2775.11482434918!2d10.022465815924857!3d53.54469696753641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18eed7a09e499%3A0x3340663161e97430!2sGFN+-Trainingscenter+Hamburg+-+Weiterbildungen%2C+Umschulungen%2C+Zertifizierungen!5e1!3m2!1sde!2sde!4v1463737660960" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </main>
+
+        <footer>
+            <nav id="meta-nav">
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>

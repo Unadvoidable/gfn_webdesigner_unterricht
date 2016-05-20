@@ -18,8 +18,8 @@ body {}
 }
 
 main {
-    background: linear-gradient(to right ,#6a5ed6, #e1def6);
-    padding: 10px; 
+    background: linear-gradient(to right, #6a5ed6, #e1def6);
+    padding: 10px;
     color: white;
 }
 
@@ -58,6 +58,14 @@ nav ul a {
 
 #main-nav li a {
     text-transform: uppercase;
+}
+
+#main-nav li:hover a {
+    color: chartreuse;
+}
+
+#main-nav li:hover {
+    background-color: blueviolet;
 }
 
 footer nav ul a {
