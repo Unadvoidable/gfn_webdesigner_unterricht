@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/06_lecture.css">
+</head>
+
+<body>
+    <h1>Unterricht Teil 8</h1>
+    <em>23.05.2016</em>
+    <hr>
+    <h2>Notizen</h2>
+    <ul id="liste_notizen">
+        <li>
+            <strong>Positionierung</strong>
+            <br>static - standard attribut
+            <br>Padding - wird auf die werte einer Box hinzu gerechnet. Das bedeutet bei einer 200x100 box mit einem padding von 10 wir daraus eine 220x120 box
+            <br>Border wird ebenfalls draufgerechnet
+            <br>Margin wid zwar nciht zum element hinzu gerechnet aber der raum um das element wird gesperrt, abgesehen vom vertikalen margin, dieser wird mit dem darunterliegenden element verrechnet.
+            <br>Beim Browser kann man unter dem Punkt "untersuchen" ebenfalls das Boxmodell untersuchen
+        </li>
+        <li>
+            Der Bereich innerhalb des <em>Style</em> Tags, verhält sich wie ein CSS dokument.
+        </li>
+        <li>Float wurde geschaffen damit man Text um Bilder herrum fließen lassen kann.
+            <br>Normalerweise verhält sich ein Bild (inline element) dass es die Zeile auf der es steht auf die gleiche größe wie das Bild selber zu vergrößern.
+            <br>Float left, steht links und lässt sich rechts umfließen
+            <br>Float right, steht rechts und lässt sich auf der linken Seite umfließen
+        </li>
+        <li>
+            Elemente mit Statischer positionierung erlauben nicht das Elemente nicht mehr erreichbar sind und verdrängt daher das andere element an einen anderen Platz.
+            <br>
+        </li>
+        <li>
+            Um das float verhalten ab einem gewissen punkt zu beenden, definiert man ein "Clear" befehl.
+        </li>
+        <li>
+            in Vielen Projekten findet man ein "clearfix". Beinhaltet
+        </li>
+        <li>Elemente die mehrere klassen verwenden möchten werden einfach ind er klassen definition durch leerzeichen getrennt.
+            <br><code>	class="klasse1 klasse2"</code>
+            <br>Man sollte planen und verschiedene Eigenschaften in klassen definieren sowie: Schattierung, rahmen, positionseigenschaften.
+        </li>
+        <li>Man könnte float elemente einfach in ein element hinein packen, dann wird das floaten von elementen ausserhalb des wrappers aufgehoben sein. Das problem dabei ist dass die box dann eine feste höhe haben muss denn die box kann die höhe nicht automatisch berechnen solange das floaten nicht aufgelöst wird.
+            <br>Die andere Lösung ist dem wrapper ein <code>overflow: hidden;</code> zu geben, das erlaubt dass der wrapper/box sich an dem errechnen der höhe versucht. Dies sorgt dafür dass das floaten die box garnicht erst verlässt.
+        </li>
+        <li>Design-vorgehensweisen - Es gibt verschiedene Arten an die Layout Planung herran zu gehen.
+            <br>zb. Mobile first - Erst designt man nach dem kleinsten Platz so dass es auf mobilen geräten gut aussieht und danach optimiert man es auf mehr platz
+            <br>zb.2 Content first - Erst der Inhalt und dann das Design dazu.
+        </li>
+        <li>
+            Das <code>ul</code> hat standardmäßig ein padding nach links um die bulletpoints anzeigen zu können
+        </li>
+
+
+    </ul>
+    <!-- Infobox - Tipp des tages -->
+
+    <details>
+        <summary><strong>Tipp des Tages</strong></summary>
+        <ul>
+            <li>Michi daran erinnern: iFrames popups erstellen</li>
+        </ul>
+    </details>
+    <hr>
+
+    <h2>Beispiel code</h2>
+    <em>aus Unterricht 8</em>
+
+    <!-- ################# Der Eigentliche Beispielcode ################ -->
+    <div id="samplecode">
+        <header></header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="#">Leistungen</a></li>
+                <li><a href="#">Produkte</a></li>
+                <li><a href="#">Projekte</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+        </main>
+
+        <footer>
+            <nav id="meta-nav">
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>

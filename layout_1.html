@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: dimgray;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        #wrapper {
+            max-width: 960px;
+            margin: auto;
+        }
+        
+        #main-nav {
+            background: #333;
+        }
+        
+        #main-nav ul {
+            margin: 0 ;
+            padding: 5px;
+            list-style-type: none;
+            overflow: hidden;
+        }
+        
+        #main-nav li {
+            width: 15%;
+            padding: 1%;
+            background: #ff0;
+            float: left;
+            margin:1.5%;
+        }
+        
+        header {
+            background-color: #ccc;
+            overflow: hidden;
+        }
+        
+        header div {
+            min-height: 100px;
+            float: left;
+        }
+        
+        .orange {
+            background-color: orange;
+            color: white;
+        }
+        
+        .blue {
+            background-color: skyblue;
+            color: white;
+        }
+        
+        .left {
+            float: left;
+            width: 56%;
+            padding: 2%;
+            font-family: 'Indie Flower', cursive;
+        }
+        
+        .right {
+            float: left;
+            width: 36%;
+            padding: 2%;
+        }
+        
+        .main_wrapper {
+            overflow: hidden;
+            background-color: #ccc;
+            min-height: 300px;
+        }
+        
+        footer {
+            overflow: hidden;
+        }
+        
+        footer div {
+            float: left;
+            min-height: 50px;
+            width: 33%;
+            background-color: darkblue;
+            border-radius: 0px 0 20px 20px;
+            color: chartreuse;
+            text-align: center;
+            padding: 0 0 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div#wrapper>nav#main-nav+header+main+aside+footer-->
+    <div id="wrapper">
+        <nav id="main-nav">
+            <!-- ul>li*5>a[#]{seite$} -->
+            <ul>
+                <li><a href="#">Seite 1</a></li>
+                <li><a href="#">Seite 2</a></li>
+                <li><a href="#">Seite 3</a></li>
+                <li><a href="#">Seite 4</a></li>
+                <li><a href="#">Seite 5</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="left orange">Header - Left Content</div>
+            <div class="right blue">Header - Community</div>
+        </header>
+        <div class="main_wrapper">
+            <main class="left blue" style="min-height: inherit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ut hic ad odit quae eveniet repellendus, atque laboriosam ea commodi quod voluptatum, dolores perferendis libero reiciendis nisi inventore nam similique ipsa et molestias, debitis molestiae beatae! Laboriosam ipsum voluptates maxime fugit, nemo cumque quis ex, blanditiis tempora non dignissimos natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda necessitatibus labore harum, illo optio obcaecati laboriosam officiis, cumque natus eveniet totam, suscipit praesentium nihil aliquam impedit consequuntur accusamus ipsum! Tempore ab itaque sed labore accusamus voluptatibus earum consequatur quidem, et provident incidunt reiciendis, porro corrupti numquam ex quos. Nesciunt ullam porro cumque quasi non adipisci, quos, aliquid quas, incidunt numquam laboriosam quisquam ratione reiciendis. Vitae nam, consequuntur sit sequi itaque quod at, nemo quisquam enim facere, placeat iste repellendus explicabo qui repellat temporibus tenetur. Ipsam voluptates culpa, minima hic consequatur harum fuga nobis nisi est quas maxime tempore, magnam vitae quae exercitationem numquam velit molestiae at facilis! Ad incidunt ipsa laborum magni aliquid facilis mollitia iusto nulla minus fugit? Autem numquam, quis nisi aliquam nulla sunt, incidunt, officiis doloremque porro eum placeat reiciendis! Suscipit, atque eos nisi fuga expedita similique minus aliquid reprehenderit voluptatum consequuntur eligendi, sit, quae ex illum. </main>
+            <aside class="right orange" style="min-height: inherit">If one element is bigger, then the background of the wrapper will be shown!</aside>
+        </div>
+        <footer>
+            <div>Impressum</div>
+            <div style="margin: 0 0.5% 0 0.5%">Kontakt</div>
+            <div>AGB</div>
+        </footer>
+    </div>
+</body>
+
+</html>

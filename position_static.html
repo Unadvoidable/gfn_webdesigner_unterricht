@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Positionieren: Static</title>
+    <style>
+        /* CSS */
+        
+        body {
+            margin: 0;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        
+        #b1 {
+            background-color: #ff0;
+            float: left;
+        }
+        
+        #b2 {
+            background-color: #f0f;
+            float: left;
+        }
+        
+        #b3 {
+            background-color: #0ff;
+            float: left;
+        }
+        
+        #b4 {
+            background-color: black;
+            clear: both;
+        }
+        
+        .clearfix {
+            clear: both;
+        }
+        
+        #wrapper {
+            background-color: #bbb;
+            min-height: 50px;
+            padding: 5px;
+        }
+        
+        .mini-box{
+            height: 25px;
+            width: 150px;
+            background-color: #fff;
+            float: left;
+            margin-right: 5px;
+            margin-right: 5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--div.box#b$*4-->
+    <div class="box" id="b1"></div>
+    <div class="box" id="b2">Lorem ipsum dolor sit amet.</div>
+    <div class="box" id="b3"></div>
+    <div class="box" id="b4"></div>
+    
+    <div id="wrapper">
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+        <div class="mini-box"></div>
+    </div>
+    
+    <div style="height:20px; width: 100px; background: #f00"></div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga provident vel incidunt quis veritatis nobis nostrum quisquam reprehenderit voluptatem, sapiente.
+
+</body>
+
+</html>

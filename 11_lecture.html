@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/09_code.css">
+</head>
+
+<body>
+    <h1>Unterricht Teil 8</h1>
+    <em>26.05.2016</em>
+    <hr>
+    <h2>Notizen</h2>
+    <ul id="liste_notizen">
+        <li><strong>Absolute Positionierung</strong>
+            <br> Die Schichten die zuletzt definiert wurden werden immer eine schicht darüber gelegt.
+            <br> Bei absoluter Positionierung werden die Inhalte nicht mehr geschützt wie beim Floaten wo die inhalte aus der Box herraus gedrückt werden.
+            <br> Die Positionierung funktioniert mit (Left/Right) für X position und (Top/Bottom) für Y positon, wobei ersteres den Ankerpunkt definiert von wo aus der Abstand berechnet wird.
+            <br>Top und Left sind Fixe Positionen
+            <br>Bottom und Right sind dynamische Positionen die sich mit der verfügbaren browsergröße anpassen
+            <br>Beim Positionieren richten sich die Elemente an dem höchsten nicht statischem element aus ...
+            <br><code>Position:Relative</code>
+            <br>Werte die nicht angegeben werden sind dynamisch
+            <br>Z-achse lässt sich steuern mit dem <code>z-index: xxx</code>
+        </li>
+        <li>Absolute Positionierung benutzt man immer dann wenn die Größen der Elemente Feststehen</li>
+        <li><strong>Icons</strong> Heutzutage wird mit vectoren gearbeitet da sie dynamisch sind ... (Andere vorteile eintragen)
+            <br>Gute fonts und icons 4F <a href="http://fontawesome.io/?utm_source=hackernewsletter">Fontawesome</a>
+            <br><code>i</code> Tag kann als formatierbares inline element genutzt werden da es sehr kurz ist und nur für eine Physische formatierung steht aber keine Logische
+            <br>Ein div hätte in diesem fall eine Logische formatierung wie ein Breakline (usw...)
+        </li>
+        <li>
+            <strong>em</strong> Richtet sich nach der Größe des direkten eltern elementes
+            <br><code>em:0.8</code> sind 80% des Eltern Elements
+            <br><strong>em</strong> Richtet sich nach der Größe des direkten eltern elementes
+            <br><code>em:0.8</code> sind 80% der Schriftgröße des HTML documents ''
+        </li>
+        <li>
+            Es ist empfohlen immer FONT-Icons zu nutzen, welche eigentlich Zeichen sind. Da dieses Vectorgrafiken sind, leidet die qualität nicht in der skalierung und diese lassen sich dynamischer editieren
+        </li>
+    </ul>
+    <!-- Infobox - Tipp des tages -->
+
+    <details>
+        <summary><strong>Tipp des Tages</strong></summary>
+        <ul>
+
+        </ul>
+    </details>
+    <hr>
+
+    <h2>Beispiel code</h2>
+    <em>aus Unterricht 8</em>
+
+    <!-- ################# Der Eigentliche Beispielcode ################ -->
+    <div id="samplecode">
+
+    </div>
+
+</body>
+
+</html>
